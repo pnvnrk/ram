@@ -1,0 +1,12 @@
+import pandas as pd
+import numpy as np
+import matplotlib as pyplot
+import seaborn as sns
+fyntra=pd.read_csv("F:\material\data\edureka\FyntraCustomerData.csv",index_col=0)
+fyntra
+fyntra.info()
+fyntra.describe()
+correlations=fyntra.corr
+correlations
+fyntra.head(5)
+fyntra=fyntra.drop(["email","adress"],axis=1)
